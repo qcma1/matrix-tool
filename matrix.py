@@ -37,10 +37,10 @@ if __name__ == "__main__":
                         required=True
                         )
     parser.add_argument("matrix", 
-                        help="type the matrix/matrices in 2d array here",
+                        help="type the matrix/matrices (represented as 2d array) here, each enclosed in single/double quotes",
                         nargs="+")
     parser.add_argument("--pow",
-                        help="power for matrix power function")
+                        help="power for matrix power function, you need this argument when using power function")
     args = parser.parse_args()
     # print(args.func)
     # print(args.matrix)
